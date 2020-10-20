@@ -5,18 +5,24 @@
  * You can complete your projects by forming groups with your friends and you can contact them for any references.
 
 [![Requests Version](https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f9dd821cb48125c63c64b6f5c7552372/ejs.png)](https://ejs.co/)
-[![DateTime Version](https://img.shields.io/badge/datetime-4.3-red)](https://pypi.org/project/datetime/)
+
 ## Description 
 
-At the beggining our chatbot greets the user and asks for username. 
+When we opened the website it asks the user to login. 
 
-After that the bot prints the welcome message for the user  .
+If the login failed then it opens another webpage which asks the user for signup.
 
-Then the bot displays some operations which it can perform.
+After successfull login it displays the dashboard which is the main page for the website it contains sevral pages linked to it.
 	
-After that the bot asks the user for what operation it has to perform (like knowing no.of recovered cases in India and Total no.of cases in USA...).
+In the Home page u can find the total information of this site and you can find your fiends who have account in this website and some general info .
 
-The main Aim of our chatbot is to provide covid-19 statistics for all people who use it and necesary precautions for it.
+In the Teams page you can find your projects which are completed and yet to complete and upcoming projects and you can get total info about your project who have taken place in this project and their contact info for any further doubts.
+
+In the Profile page you will have your complete information.
+
+In Contact page yopu can find the contact info about website creator and you can contact him if any changes are need to made.
+
+
 ## Youtube Link :
 
 [![Youtube Link](https://drive.google.com/file/d/1GrgSjDsiL8QydUr-aNiZXTg2y5Y0Wl3o/view?usp=sharing)]
