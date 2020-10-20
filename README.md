@@ -4,7 +4,7 @@
  * This website is used for forming groups with our friends.
  * You can complete your projects by forming groups with your friends and you can contact them for any references.
 
-[![Requests Version](https://img.shields.io/badge/requests-2.24.0-orange)](https://pypi.org/project/requests/)
+[![Requests Version](https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f9dd821cb48125c63c64b6f5c7552372/ejs.png)](https://ejs.co/)
 [![DateTime Version](https://img.shields.io/badge/datetime-4.3-red)](https://pypi.org/project/datetime/)
 ## Description 
 
