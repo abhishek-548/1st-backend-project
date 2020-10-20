@@ -20,7 +20,7 @@ In the Teams page you can find your projects which are completed and yet to comp
 
 In the Profile page you will have your complete information.
 
-In Contact page yopu can find the contact info about website creator and you can contact him if any changes are need to made.
+In Contact page you can find the contact info about website creator and you can contact him if any changes are need to made.
 
 
 ## Youtube Link :
