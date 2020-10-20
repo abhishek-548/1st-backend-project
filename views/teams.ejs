@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--dir-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--gfonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			margin: 0px;
+			padding:0px;
+		}
+		#btn{
+			width: 120px;
+			background-color: black;
+			color:white;
+			padding:10px 10px 10px 10px;
+			border: 2px solid #236475;
+			border-radius: 5px;
+		}
+		#btn:hover{
+			background-color: #236475;
+		}
+		#one{
+			height: 300px;
+			width: 290px;
+			background-color: white;
+			border-radius: 5px;
+			border-left:2px solid #236475;
+			font-family: 'Roboto', sans-serif;
+		}
+		#one:hover{
+			box-shadow: 0px 1px 5px 1px #F7F7F7;
+		}
+		#two{
+			height: 300px;
+			width: 290px;
+			background-color: white;
+			border-radius: 5px;
+			border-left:2px solid #236475;
+			font-family: 'Roboto', sans-serif;
+			margin-left: 400px;
+			margin-top: -315px;
+		}
+		#two:hover{
+			box-shadow: 0px 1px 5px 1px #F7F7F7;
+		}
+		#three{
+			height: 300px;
+			width: 290px;
+			background-color: white;
+			border-radius: 5px;
+			border-left:2px solid #236475;
+			font-family: 'Roboto', sans-serif;
+			margin-left: 800px;
+			margin-top: -315px;
+		}
+		#three:hover{
+			box-shadow: 0px 1px 5px 1px #F7F7F7;
+		}
+		#four{
+			height: 300px;
+			width: 290px;
+			background-color: white;
+			border-radius: 5px;
+			border-left:2px solid #236475;
+			font-family: 'Roboto', sans-serif;
+		}
+		#four:hover{
+			box-shadow: 0px 1px 5px 1px #F7F7F7;
+		}
+	</style>
+</head>
+<body>
+	<div style="height: 650px;width: 100%;color:white;background-color: black;">
+		<br>
+		<h1 style="margin-left: 20px;">The Team's <span style="color:#1778F2">Blog</span></h1>
+		<p style="font-family: 'Roboto', sans-serif;float: right;margin-top: -50px;margin-right: 20px;"><a href="" style="text-decoration: none;color:white;margin-right: 20px;">Home</a>
+			<a href="" style="text-decoration: none;color:white;margin-right: 20px;">Profile</a>
+			<a href="" style="text-decoration: none;color:white;margin-right: 20px;">Contact</a>
+			<a href="tonew.html"><button id="btn">New project</button>
+		</a>		
+		</p>
+		<h1 style="text-align: center;color:white;font-family: 'Roboto', sans-serif;margin-left: 150px;">Meet the Team</h1>
+		<br><br><br><br><br><br>
+		<h1 style="color:white;margin-left: 50px;margin-top: 100px;">Welcome,Abhishek</h1>
+		<p style="word-spacing: 1px;margin-left: 50px;font-family: 'Roboto', sans-serif;">Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been the industry's standard dummy<br> text ever since the 1500s, when an unknown printer took a galley<br> of type and scrambled it to make a type specimen book. It has<br> survived not only five centuries, but also the leap into electronic<br> typesetting, remaining essentially unchanged. It was popularised in<br> the 1960s with the release of Letraset sheets containing Lorem<br> Ipsum passages, and more recently with desktop publishing<br> software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<p style="float: right;margin-top: -250px;margin-right: 100px;">
+			<img src="ss.png">
+		</p>
+	</div>
+	<br><br><br>
+	<div>
+		<img src="https://www.impactbnd.com/hubfs/best-team-page.jpg" style="height: 400px;width: 50%;">
+		<p style="float: right;color:white;margin-right: 50px;">
+			<span style="font-size: 20px;font-family: 'Roboto', sans-serif;">Why Group work?</span><br><br>
+			<span style="word-spacing: 2px;font-family: 'Roboto', sans-serif;">
+				The group worker enables various types of groups to function in<br> such a way that both group interaction and programme<br> activities contribute to the growth of the individual,<br> and the achievement of the desirable social goal. The objectives<br> of the group worker include provision for personal growth<br> according to individual capacity and need; the adjustment<br> of the individual to other persons, to groups and to society,<br> the motivation of the individual toward the improvement of <br>society and; the recognition by the individual of his own rights,<br> abilities and differences of others.</span>
+		</p>
+	</div>
+
+	<div style="margin-left: 110px;">
+		<br><br>
+		<h3 style="color:grey;">Upcoming <span style="color:grey;">Projects</span></h3>
+		<p style="color:grey;">Here you will find upcoming projects</p>
+		<p style="text-align: center;color:grey;">No upcoming projects</p>
+	</div>
+
+	<div style="margin-left: 110px;">
+		<br><br>
+		<h3 style="color:grey;">Completed <span style="color:grey;">Projects</span></h3>
+		<p style="color:grey;">Here you will find completed projects</p>
+		<p style="text-align: center;color:grey;">No completed projects</p>
+	</div>
+	
+
+	<div style="margin-left: 110px;background-color: black;">
+		<br><br>
+		<h3 style="color:grey;">Current <span style="color:grey;">Projects</span></h3>
+		<p style="color:grey;">Here you will find Current projects</p>
+		<br>
+		<% for(var i=0;i<data.length;i++) {%>
+			<div id="four">
+			<p style="color:grey;text-align: center;background-color: black;padding: 10px 0px 10px 0px;">july 7th,2018</p>
+			<p style="margin-top: -4.5px;">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAoCzQ1O6q7P-0QtC_KdTIUu1upJgbT6NmlQ&usqp=CAU" style="height: 130px;width:290px;border-radius: 0px 0px 5px 5px;margin-top: -11px;">
+			</p>
+			<p style="color:black;word-spacing: 1px;font-size: 18px;margin-left: 15px;"><%= data[i].projecttit %></p>
+			<p style="color:grey;margin-left: 15px;font-size: 12px;"><%= data[0].mentorname %></p>
+			<p style="text-align: center;margin-top: -5px;font-size: 13px;">
+			<a href="/meme" style="text-decoration: none;">Project Details</a><i class="fa fa-angle-double-right" style="font-size:16px;margin-left: 7px;color:#236475;"></i>
+			</p>
+		</div>
+		<% } %>
+	</div>
+	
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--google font-->
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<style type="">
+		body{
+			background-color: black;
+		}
+		#m{
+			width:60%;
+			height: 1500px;
+			margin-left: 200px;
+			background-color: black;
+			border: 2px solid blue;
+  			animation: animate 2s infinite;
+		}
+		@keyframes animate{
+			25%{border-color: violet;}
+  			50% {border-color: lightblue;}
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<header>
+		<h1 style="color:white;margin-left: 150px;margin-top: 50px;">The Student <span style="color:#1778F2">Blog</span></h1>
+		<p style="margin-left: 500px;margin-top: -49px;word-spacing: 1px;font-size: 20px;">
+		<span style="border-bottom: 2px solid #236475;color:white;padding-bottom: 5px;margin-right: 45px;"><a href="/home" style="text-decoration: none;color:white;">Home</a></span>
+		<span style="border-bottom: 2px solid #236475;color:white;padding-bottom: 5px;margin-right: 45px;"><a href="/profile" style="text-decoration: none;color:white;">Profile</a></span>
+		<span style="border-bottom: 2px solid #236475;color:white;padding-bottom: 5px;margin-right: 45px;"><a href="/teams" style="text-decoration: none;color:white;">Teams</a></span>
+		<span style="border-bottom: 2px solid #236475;color:white;padding-bottom: 5px;margin-right: 45px;"><a href="contact.html" style="text-decoration: none;color:white;">Contact</a></span>
+		</p>
+	</header>
+	<br><br>
+	<div id="m">
+		<div>
+		<img src="https://myventurepad.com/wp-content/uploads/2017/05/your-website.jpg" style="margin-left: 30px;margin-top: 20px;">
+		<h3 style="color:white;margin-left: 300px;">Project:- <%= data[0].projecttit %></h3>
+		<br>
+		<hr style="border-color: #54878A;width: 90%;">
+		<h3 style="font-family: 'Josefin Sans', sans-serif;color:#54878A;margin-left: 50px;">Meet the Team</h3>
+		<br>
+		<% var arr=["https://media-exp1.licdn.com/dms/image/C5603AQGQcpl_4fzNxw/profile-displayphoto-shrink_200_200/0?e=1605744000&v=beta&t=9RnFAVBvXSDPUJWNzpTnmqk_HSwYsH3rMsr8ENbdl2s","https://www.refinery29.com/images/8829157.jpg?format=webp&width=720&height=864&quality=85","https://media.wired.com/photos/5d7d4304924fc50008955880/1:1/w_371,h_371,c_limit/Backchannel-Snowden-Q&A-JA1G3M.jpg","https://vignette.wikia.nocookie.net/villains/images/8/86/EdwardAlderson.jpg/revision/latest/top-crop/width/360/height/450?cb=20200201143818"]%>
+		<img src= <%= arr[0] %> style="height:150px;width:150px;margin-left:40px;">
+		<p style="color:white;margin-left: 300px;margin-top: -100px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-right: 5px;">Name:</span> <%= data[0].mentorname %><span style="margin-left: 10px;">(Mentor)</span></p>
+		<p style="color:white;margin-left: 300px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-right: 5px;">Contact:</span> <%= data[0].mentoremail %><span style="margin-left: 10px;">(Mentor)</span></p>
+		<br><br><br><br>
+		<hr style="width: 35%;border:1px solid #236475;float:left;margin-left: 15px;">
+ 		<br><br><br>
+
+ 		<img src= <%= arr[1] %> style="height:150px;width:150px;margin-right:40px;float:right;">
+		<p style="color:white;margin-left: 60px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-right: 5px;">Name:</span> <%= data[0].memb1name %><span style="margin-left: 10px;">(Teammate)</span></p>
+		<p style="color:white;margin-left: 40px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-left: 20px;">Contact:</span> <%= data[0].memb1email %><span style="margin-left: 10px;">(Teammate)</span></p>
+		<br><br><br><br><br><br>
+		<hr style="width: 35%;border:1px solid #236475;float:right;margin-right: 15px;">
+ 		<br><br>
+
+ 		<img src= <%= arr[2] %> style="height:150px;width:150px;margin-left:40px;">
+		<p style="color:white;margin-left: 300px;margin-top: -100px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-right: 5px;">Name:</span> <%= data[0].memb2name %><span style="margin-left: 10px;">(Teammate)</span></p>
+		<p style="color:white;margin-left: 300px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-right: 5px;">Contact:</span> <%= data[0].memb2email %><span style="margin-left: 10px;">(Teammate)</span></p>
+		<br><br><br><br>
+		<hr style="width: 35%;border:1px solid #236475;float:left;margin-left: 15px;">
+ 		<br><br><br>
+
+ 		<img src= <%= arr[3] %> style="height:150px;width:150px;margin-right:40px;float:right;">
+		<p style="color:white;margin-left: 60px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-right: 5px;">Name:</span> <%= data[0].memb3name %><span style="margin-left: 10px;">(Teammate)</span></p>
+		<p style="color:white;margin-left: 40px;font-family: 'Josefin Sans', sans-serif"><span style="color:#236475;margin-left: 20px;">Contact:</span> <%= data[0].memb3email %><span style="margin-left: 10px;">(Teammate)</span></p>
+		<br><br><br><br><br><br>
+		<hr style="width: 35%;border:1px solid #236475;float:right;margin-right: 15px;">
+ 		<br><br>
+
+	</div>
+	</div>
+</body>
+</html>

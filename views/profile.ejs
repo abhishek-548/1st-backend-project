@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Home icon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body{
+			background-color: #F5F5F5;
+			margin: 0px;
+			padding:0px;
+		}
+		#top{
+			height: 50px;
+			position: fixed;
+			width: 100%;
+			background-color: #283E4A;
+		}
+		#ig{
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			display: inline-block;
+			margin-top: 6px;
+			margin-left: 120px;
+			cursor: pointer;
+		}
+		#mid{
+			height: 200px;
+			width: 750px;
+			background-color: red;
+			margin-left: 110px;
+			background-image: url("https://coverfiles.alphacoders.com/372/37275.jpg");
+		}
+		#currpro{
+			margin-left: 30px;
+			height: 280px;
+			width:280px;
+			background-color: white;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#currpro:hover{
+			box-shadow: -5px 10px 3px 3px #EAEAEA;
+		}
+		#card{
+			display: none;
+			height: 300px;
+			width: 300px;
+			background-color:white;
+			color:black;
+			margin-left: 900px;
+			margin-top: 30px;
+			border-radius: 5px;
+		}
+		#thiscard{
+			display: none;
+			height: 350px;
+			width: 600px;
+			background-color:white;
+			color:black;
+			margin-left: 600px;
+			margin-top: 30px;
+			border-radius: 5px;
+		}
+		#one{
+			height: 280px;
+			width: 280px;
+			margin-left: 130px;
+			background-color: white;
+			transition-duration: 1s;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#one:hover{
+			box-shadow: -5px 10px 3px 3px #EAEAEA;
+		}
+		#two{
+			height: 280px;
+			width: 280px;
+			margin-left: 450px;
+			margin-top: -280px;
+			background-color: white;
+			transition-duration: 1s;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#two:hover{
+			box-shadow: -5px 10px 3px 3px #EAEAEA;
+		}
+		#three{
+			height: 280px;
+			width: 280px;
+			margin-left: 770px;
+			margin-top: -280px;
+			background-color: white;
+			transition-duration: 1s;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#three:hover{
+			box-shadow: -5px 10px 3px 3px #EAEAEA;
+		}
+		#this{
+			background-color: black;
+			height: 250px;
+			width: 300px;
+			border-radius: 5px;
+			margin-left: 350px;
+			margin-top: -100px;
+			display: none;
+			color:white;
+			text-align: center;
+		}
+		/*new*/
+		#con{
+			color:white;
+			background-color: #10CDEF;
+			border-radius: 5px;
+			border: 1px solid #10CDEF;
+			width: 100px;
+			padding: 10px 0px 10px 0px;
+			cursor: pointer;
+		}
+		#con:hover{
+			box-shadow: -1px 1px 3px 3px #EAEAEA;
+		}
+		#msg{
+			color:white;
+			background-color: #172A4D;
+			border-radius: 5px;
+			border: 1px solid #172A4D;
+			width: 100px;
+			padding: 10px 0px 10px 0px;
+			cursor: pointer;
+		}
+		#msg:hover{
+			box-shadow: -1px 1px 3px 3px #EAEAEA;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id="top">
+		<img src="https://image.shutterstock.com/image-vector/isolated-green-color-student-contour-260nw-459381175.jpg" id="ig">
+		<span style="font-size: 30px;margin-top: -40px;margin-left: 190px;display:block;">The Team's <span style="color:#1778F2;font-size: 30px;">Blog</span></span>
+
+		<a href="/home" style="text-decoration: none;">
+		<i class="fa fa-home" style="font-size:26px;margin-left:600px;margin-top: -40px;display: block;color:white;"></i>
+		<span style="display: block;margin-left: 600px;margin-top: 0px;font-size: 15px;color:white;">Home</span></a>
+
+		<a href="/teams">
+		<i class="fa fa-group" style="font-size:20px;margin-left: 700px;margin-top: -40px;display: block;color:white;"></i>
+		<span style="display: block;margin-left: 700px;margin-top: 0px;font-size: 13px;color:white;">Teams</span></a>
+
+		<i onclick="tic()" class="fa fa-bell" style="font-size:20px;margin-left: 800px;margin-top: -35px;display: block;color:white;cursor: pointer;"></i>
+		<span style="display: block;margin-left: 800px;margin-top: 0px;font-size: 13px;color:white;">Notification</span>
+
+		<span style="display: block;margin-left: 1000px;margin-top: -30px;color:white;">Current projects:0</span>
+		<img onclick="igtop()" src="https://lh3.googleusercontent.com/ogw/ADGmqu9wg6oVMVN_6x5lrzZNrlgcgurvLhvB-zM1k_EE=s32-c-mo" style="border-radius: 50%;margin-left: 1170px;margin-top: -28px;cursor: pointer;">
+		<!--card-->
+		<div id="card">
+			<img src="https://cdn.thervo.com/assets/images/letters/A.png"style="border-radius: 50%;margin-left:20px;margin-top: 15px;cursor: pointer;height: 100px;width: 100px;">
+			<p style="margin-top: -80px;margin-left: 130px;font-weight: bold;"><%= data[0].name %></p>
+			<p style="margin-top: -10px;margin-left: 130px;color:grey;font-size: 13px;"><%= data[0].email %></p>
+			<p style="margin-top: -10px;margin-left: 130px;font-weight: bold;color:black;"><a href="">view profile</a></p>
+			<br>
+			<hr style="opacity: 0.5;color:grey;width: 95%;">
+			<p style="margin-left: 20px;">Edit profile</p>
+			<hr style="opacity: 0.5;color:grey;width: 95%;">
+			<p style="margin-left: 20px;"><a href="mailto:abhishekgera2001@gmail.com" style="text-decoration: none;color:black;">Help(Mail to me)</a></p>
+			<p style="margin-left: 20px;"><a href="index.html" style="text-decoration: none;color:black;">Logout</a></p>
+		</div>
+		<!--This is also a card-->
+		<div id="thiscard">
+			<br>
+			<p style="margin-left: 50px;">Your Notifications</p>
+			
+			<hr style="width: 95%;color:grey;">
+			<i class="fa fa-bell-slash" style="font-size:78px;color:black;margin-left: 250px;margin-top: 80px;"></i>
+			<p style="color:grey;text-align: center;">No Notifications</p>
+		</div>
+
+	</div>
+
+	<div style="height: 500px;width:100%;background-color: #F5F5F5;background-image: url('https://www.loopbackanalytics.com/wp-content/uploads/2019/04/bg-header-geo.jpg');">
+	</div>
+
+	<div style="height: 500px;width: 800px;background-color: white;margin-left: 300px;margin-top: -100px;border-radius: 5px;border:1px solid #F7F7F7;">
+		<br>
+		<p style="margin-top: 10px;margin-left: 50px;"><button id="con">CONNECT</button></p>
+		<p style="margin-left:300px;margin-top: -130px;"><img src="https://media-exp1.licdn.com/dms/image/C5603AQGQcpl_4fzNxw/profile-displayphoto-shrink_200_200/0?e=1605744000&v=beta&t=9RnFAVBvXSDPUJWNzpTnmqk_HSwYsH3rMsr8ENbdl2s" style="height: 150px;width: 150px;border-radius: 50%;box-shadow: 0px 3px 5px 3px grey;"></p>
+		<p style="margin-left: 640px;margin-top: -90px;"><button id="msg">MESSAGE</button></p>
+		<br>
+		<p style="color:#525F7F;margin-left: 265px;font-family: 'Roboto', sans-serif;font-size: 20px;">00<br><span style="color:#ADB5BC;margin-left: -17px;">Current<br><span style="color:#ADB5BC;margin-left: -17px;">Projects</span></span></p>
+
+		<p style="color:#525F7F;margin-left: 370px;margin-top: -87px;font-family: 'Roboto', sans-serif;font-size: 20px;">00<br><span style="color:#ADB5BC;margin-left: -17px;">Completed<br><span style="color:#ADB5BC;margin-left: -17px;">Projects</span></span></p>
+
+		<p style="color:#525F7F;margin-left: 490px;margin-top: -87px;font-family: 'Roboto', sans-serif;font-size: 20px;">00<br><span style="color:#ADB5BC;margin-left: -17px;">Upcoming<br><span style="color:#ADB5BC;margin-left: -17px;">Projects</span></span></p>
+		<br><br>
+		<h1 style="text-align: center;color:#525F7F;"><%= data[0].name %></h1>
+		<p style="color:#353560;font-family: 'Roboto', sans-serif;text-align: center;">Bhimavaram,Andhra Pradesh</p>
+		<p style="color:#353560;font-family: 'Roboto', sans-serif;text-align: center;">
+			<%= data[0].spec %>(2 years experience)
+		</p>
+		<p style="color:#353560;font-family: 'Roboto', sans-serif;text-align: center;">
+			<a href="mailto:abhishekgera2001@gmail.com" style="text-decoration: none;"> Contact Me (<%= data[0].email %>)</a>
+		</p>
+	</div>
+	<br>
+	<div style="height: 65px;background-color: #F7F7F7;border-top:0.5px solid grey;">
+		<br>
+		<p style="color:grey;text-align: center;">©2020 My company.Ltd.  All rights reserved
+		</p>
+	</div>
+
+	
+</body>
+
+	<script type="text/javascript">
+	function fun(){
+		var x=document.getElementById('this');
+		if(x.style.display==="none"){
+			x.style.display="block";
+		}
+		else{
+			x.style.display="none";
+		}
+	}
+
+	function igtop(){
+		var y=document.getElementById("card");
+		if(y.style.display==="none"){
+			y.style.display="block";
+		}
+		else{
+			y.style.display="none";
+		}
+	}
+
+	function tic(){
+		var z=document.getElementById("thiscard");
+		if(z.style.display==="none"){
+			z.style.display="block";
+		}
+		else{
+			z.style.display="none";
+		}
+
+	}
+</script>
+	
+</html>
