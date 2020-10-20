@@ -1,5 +1,5 @@
 # 1st-backend-project
-![Covid bot](https://medcitynews.com/uploads/2019/08/GettyImages-1026660906.jpg)
+![Node js](https://assets.skyfilabs.com/images/blog/web-scrapping-using-node-js.webp)
 ## Objective of this website
  * This website is used for forming groups with our friends.
  * You can complete your projects by forming groups with your friends and you can contact them for any references.
